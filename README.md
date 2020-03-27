@@ -43,6 +43,8 @@ shop.checkout('ABCD') # => 115
 shop.checkout('AAA') # => 130
 shop.checkout('AAAAAA') # => 260
 ```
+
+### Test Cases/Scenarios
 ```
 INPUT   |    OUTPUT
 ===================
@@ -50,12 +52,12 @@ INPUT   |    OUTPUT
 ('B') => 30
 ('C') => 20
 ('D') => 15
-
 ('AA') => 100
 ('CC') => 40
 ('DD') => 30
 ('ABCD') => 115
 ('AAA') => 130
+
 ('AAAAA') => 230
 ('AAAAAA') => 260
 ('AABABABBACCBADA') => 485
