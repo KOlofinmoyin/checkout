@@ -57,9 +57,9 @@ INPUT   |    OUTPUT
 ('DD') => 30
 ('ABCD') => 115
 ('AAA') => 130
-
 ('AAAAA') => 230
 ('AAAAAA') => 260
+('BB') => 45
 ('AABABABBACCBADA') => 485
 ('aBc') => -1
 ('-B8x') => -1

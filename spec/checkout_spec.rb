@@ -42,6 +42,23 @@ describe Shop do
         it "takes ('AAA') and returns 130" do
           expect(shop.checkout('AAA')).to eq 130
         end
+
+        it "takes ('AAAAA') and returns 230" do
+          expect(shop.checkout('AAAAA')).to eq 230
+        end
+
+        it "takes ('AAAAAA') and returns 260" do
+          expect(shop.checkout('AAAAAA')).to eq 260
+        end
+
+        it "takes ('BB') and returns 45" do
+          expect(shop.checkout('BB')).to eq 45
+        end
+
+        # ('AABABABBACCBADA') => 485
+        xit "takes ('AABABABBACCBADA') and returns 485" do
+          expect(shop.checkout('AABABABBACCBADA')).to eq 485
+        end
       end
     end
 end
