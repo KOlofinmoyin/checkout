@@ -63,5 +63,6 @@ INPUT   |    OUTPUT
 ('AABABABBACCBADA') => 485
 ('aBc') => -1
 ('-B8x') => -1
+
 (18) => -1
 ```
