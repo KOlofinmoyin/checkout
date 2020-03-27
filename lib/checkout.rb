@@ -1,5 +1,11 @@
 class Shop
   def checkout(basket)
-    basket == 'A' ? 50 : 30
+    if basket == 'A'
+      50
+    elsif basket == 'B'
+      30
+    else
+      20
+    end
   end
 end
