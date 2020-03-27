@@ -15,5 +15,9 @@ describe Shop do
       it "takes ('C') and returns 20" do
         expect(shop.checkout('C')).to eq 20
       end
+
+      it "takes ('D') and returns 15" do
+        expect(shop.checkout('D')).to eq 15
+      end
     end
 end
