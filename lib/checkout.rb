@@ -1,13 +1,16 @@
 class Shop
   def checkout(basket)
-    if basket == 'A'
-      50
-    elsif basket == 'B'
-      30
-    elsif basket == 'C'
-      20
-    else
-      15
-    end
+    @total ||= 0
+
+    basket.each_char { |item|
+      price = {
+        'A': 50,
+        'B': 30,
+        'C': 20,
+        'D': 15
+      }
+      @total += price[item.to_sym]
+    }
+    @total
   end
 end
