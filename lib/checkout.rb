@@ -11,9 +11,10 @@ class Shop
       }
       @total += price[item.to_sym]
     }
-    # return 130 if basket == 'AAA'
+
     discount_A = ((basket.count('A')/3) * 20)
-    @total - discount_A
-    # @total
+    discount_B = ((basket.count('B')/2) * 15)
+    @total - (discount_A + discount_B)
+    @total
   end
 end

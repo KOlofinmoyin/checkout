@@ -56,7 +56,7 @@ describe Shop do
         end
 
         # ('AABABABBACCBADA') => 485
-        xit "takes ('AABABABBACCBADA') and returns 485" do
+        it "takes ('AABABABBACCBADA') and returns 485" do
           expect(shop.checkout('AABABABBACCBADA')).to eq 485
         end
       end
